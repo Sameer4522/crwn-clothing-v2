@@ -1,15 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import NavigationBar from "./routes/navigation/navigation.component";
-import SignIn from "./routes/sign-in/sign-in.component";
-
-const Shop = () => {
-  return (
-    <div>
-      <h1>I am the shop page</h1>
-    </div>
-  );
-};
+import Authentication from "./routes/authentication/authentication.component";
+import Shop from "./routes/shop/shop.comononet";
 
 const App = () => {
   return (
@@ -17,7 +10,7 @@ const App = () => {
       <Route path="/" element={<NavigationBar />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
